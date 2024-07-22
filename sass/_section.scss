@@ -1,0 +1,60 @@
+.section {
+  padding: 2.5rem 1.5rem;
+
+  .headers {
+    margin-block: 2rem;
+
+    h1 {
+      font-weight: 200;
+      color: $grayish-blue;
+    }
+
+    h2 {
+      margin-block-end: 1rem;
+      color: $very-dark-blue;
+    }
+  }
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+
+  .card {
+    padding: 1.5rem 1.5rem;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 0 $grayish-blue;
+
+    h2 {
+      margin-block-end: 0.4rem;
+      color: $very-dark-blue;
+    }
+
+    p {
+      margin-block-end: 2rem;
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  .card__supervisor {
+    border-top: 5px solid $cyan;
+  }
+
+  .card__team {
+    border-top: 5px solid $red;
+  }
+
+  .card__karma {
+    border-top: 5px solid $orange;
+  }
+
+  .card__calculator {
+    border-top: 5px solid $blue;
+  }
+}

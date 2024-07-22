@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Four Card Feature Section](./screenshot.jpg)
+![Four Card Feature Section](./screenshot.png)
 
 ### Links
 
@@ -45,17 +45,40 @@ Users should be able to:
 ### What I learned
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+
+  .cards {
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, 125px);
+    justify-content: center;
+
+    .card {
+      padding-bottom: 0;
+      height: 250px;
+    }
+    .card__supervisor,
+    .card__calculator {
+      grid-row: 2 / 4;
+    }
+
+    .card__team {
+      grid-row: 1 / 3;
+    }
+
+    .card__karma {
+      grid-row: 3 / 5;
+    }
+  }
 ```
 
 ### Continued development
 
+- The cards layout
+- The tablet view
+
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Flexbox Froggy](https://www.flexboxfroggy.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS Grid Garden](https://www.cssgridgarden.com) - This is an amazing website which helped me  understand CSS Grid. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

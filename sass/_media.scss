@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  .section {
+    .headers {
+      text-align: center;
+    }
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 48%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headers {
+    min-width: 506px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, 125px);
+    justify-content: center;
+
+    .card {
+      padding-bottom: 0;
+      height: 250px;
+    }
+    .card__supervisor,
+    .card__calculator {
+      grid-row: 2 / 4;
+    }
+
+    .card__team {
+      grid-row: 1 / 3;
+    }
+
+    .card__karma {
+      grid-row: 3 / 5;
+    }
+  }
+}
